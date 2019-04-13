@@ -1,6 +1,4 @@
-# peptide-match-app
-
-<img src="https://raw.githubusercontent.com/ying-li-python/peptide-app/master/images/peptide.gif">
+<img src="https://raw.githubusercontent.com/ying-li-python/peptide-app/master/images/peptide.gif" width="70%" height="70%">
 
 A web application that matches a peptide sequence to a reference sequence and locate its PTM site. Quick way to piece together peptide fragments from mass spectrometry for PTM mapping.
 
