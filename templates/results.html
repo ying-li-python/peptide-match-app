@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div style="font-family: inherit; font-size: 18px; font-weight: bold">
+        <p>Results</p>
+    </div>
+        
+    <p>Peptide sequence: {{ p }} </p>
+    <p>Amino acid start and end: {{ s }}</p>
+    <p>Phospho site position: {{ t }}</p>
+    <br>
+
+    <small class="form-text text-muted">Match another <a href="home">sequence</a>.</small>
+
+{% endblock content %}
+

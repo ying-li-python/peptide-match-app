@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <form method="POST" action="/results">
+        {{ form.hidden_tag() }}
+           <fieldset class="form-group"> 
+
+                <div class="form-group">
+                {{ form.protein_name.label(class="form-control-label") }} 
+                {{ form.protein_name(class="form-control form-control-sm", placeholder="ferredoxin oxidoreductase") }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.peptide_seq.label(class="form-control-label") }} 
+                    {{ form.peptide_seq(class="form-control form-control-sm", col="100", row="10", placeholder="NSLQVLNFVIFP") }}
+                </div>
+
+                <div class="form-group">
+                {{ form.protein_seq.label(class="form-control-label") }}
+                {{ form.protein_seq(class="form-control form-control-sm", col="100", row="10", placeholder="MNSERSDVTLYQPFLDYAIAYMRSRLDLEPYPIPTGFESNSAVVGKGKNQEEVVTTSYAFQTAKLRQIRAAHVQGGNSLQVLNFVIFPHLNYDLPFFGADLVTLPGGHLIALDMQPLFRDDSAYQAKYTEPILPIFHAHQQH") }}
+                </div>
+
+
+                <div class="form-group">
+                        {{ form.phospho_site_location.label(class="form-control-label") }} 
+                        {{ form.phospho_site_location(class="form-control form-control-sm") }}
+        
+                <small id="phosphoHelpBlock" class="form-text text-muted">
+                        If none, enter 0.
+                </small>
+                </div>
+            
+           </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-outline-info btn-sm") }}
+        </div>
+    </form>
+
+    {% endblock content %}
+
+    
