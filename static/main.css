@@ -8,3 +8,26 @@ h1, h2, h3, h4, h5, h6 {
     color: #444444;
   }
 
+.footer-image {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 50%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+    margin: -1px;
+}
+
+.fab, .fas {
+  color: #444444;
+  font-size: 14px;
+}
+
+.page-footer {
+    background: #fafafa;
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 14px;
+    color: #444444;
+}
